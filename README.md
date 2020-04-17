@@ -1,4 +1,18 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+
+# How to run
+
+Clone the repo:
+
+`git clone https://github.com/blueprint-at-ua/wafb-project`
+
+CD into the directory:
+
+`cd waft-project`
+
+To start the app:
+
+`php artisan serve`
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
