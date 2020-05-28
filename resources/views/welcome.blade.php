@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    West Alabama Food Bank
                 </div>
 
                 <div class="links">
