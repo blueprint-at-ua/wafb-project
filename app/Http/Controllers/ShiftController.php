@@ -24,10 +24,10 @@ class ShiftController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(User $user)
     {
-        
-        $shifts = Shifts::all();
+        $shifts = Shift::where('user_id', $user->id);
+        $shifts = $shifts->orderBy('created_at')->paginate(20);
         return view('shifts.index')->with('shifts', $shifts);
     }
 
@@ -70,7 +70,8 @@ class ShiftController extends Controller
      */
     public function show($id)
     {
-        //
+        $shift = Shift::whereId($id);
+        return view('shifts.index')->with('shift', $shift);
     }
 
     /**

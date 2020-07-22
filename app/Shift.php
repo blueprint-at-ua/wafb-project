@@ -19,8 +19,8 @@ class Shift extends Model
         'time_spent' => 0
     ];
 
-    /*protected $casts = [
-        'start_time' => 'Y-m-d H:i:s',
-        'end_time' => 'Y-m-d\TH:i'
-    ];*/
+    public function users() {
+        return $this->hasMany(Shift::class);
+    }
+
 }
