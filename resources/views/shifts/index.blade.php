@@ -13,12 +13,13 @@
                             {{ session('status') }}
                         </div>
                     @endif
+                        HERE
+                    <!--@if(isset($shifts))-->
+                    <!--@foreach($shifts as $use)
+                        <h4>{{$use}}</h4>
+                    @endforeach-->
+                    <!--@endif-->
 
-                    You are logged in!
-                    <!-- Have a view of all shift here -->
-                    <br> 
-                    <a href="{{ url('/shifts/create') }}">Create Shift</a>
-                    <br>
                 </div>
             </div>
         </div>
